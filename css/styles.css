@@ -650,6 +650,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
+  padding-bottom: 25px;
 }
 
 .social-col {
