@@ -293,11 +293,6 @@ body {
   border: solid 2px #252a34;
 }
 
-.intro.bright {
-  padding: 15% 0 15%;
-  border: solid 2px #fff;
-}
-
 .intro.dark {
   padding: 15% 0 15%;
   border: solid 2px #fff;
@@ -326,6 +321,10 @@ body {
   text-align: center;
   padding: 5% 0 10%;
 }
+#about .container-fluid{
+  background:#fdfdfd;
+  color: black;
+}
 
 #about .container-fluid.dark {
   background: #40514e;
@@ -351,16 +350,11 @@ body {
   background-color: #e4fffe;
 }
 
-#services .container-fluid.bright {
-  background-color: #e4fffe;
-}
-
 #services .container-fluid.dark {
   background-color: #323232;
   color: #fdfdfd;
 }
 
-.services-section.dark {}
 
 .skill-about {
   line-height: 2;
@@ -528,7 +522,6 @@ body {
 /*-----------------------------------------------------------------Testimonial Section-----------------------------------------------------------------*/
 #testimonials .container-fluid {
   padding: 0;
-  /* background-color: #2ec1ac; */
   position: relative;
   overflow-x: hidden;
 }
@@ -543,7 +536,6 @@ body {
   font-size: 3rem;
   padding-top: 5%;
 }
-
 .review-intro.dark {
   color: #FCFFEF;
 }
@@ -581,7 +573,7 @@ body {
 
 .bg {
   animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #91d18b /*#28df99*/ 50%, #b2ebf2 50%);
+  background-image: linear-gradient(-60deg, #91d18b 50%, #b2ebf2 50%);
   position: absolute;
   opacity: .5;
   top: 0;
@@ -673,7 +665,6 @@ body {
 
 .social-col.dark p {
   color: #FEFCFF;
-  ;
 }
 
 .p-footer {
@@ -683,7 +674,7 @@ body {
 }
 
 .p-footer.dark {
-  color: #8f8f8f;
+  color: #FEFCFF;
 }
 
 .social-icon {
@@ -695,7 +686,6 @@ body {
 
 .social-icon.dark {
   color: #FEFCFF;
-  ;
 }
 
 .email-btn {
