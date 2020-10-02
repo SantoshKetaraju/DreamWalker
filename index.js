@@ -138,7 +138,7 @@ function check_if_in_view() {
     var elementBottomPosition = elementHeight + elementTopPosition;
 
     //check to see if this current container is within viewport
-    if ((elementBottomPosition > $windowTopPosition) && ($windowBottomPosition >= elementBottomPosition)) {
+    if ((elementBottomPosition >= $windowTopPosition) && ($windowBottomPosition >= elementBottomPosition)) {
       $element.addClass("in-view");
     } else if (($windowBottomPosition < elementTopPosition) || ($windowTopPosition > elementBottomPosition)) {
       $element.removeClass("in-view");
