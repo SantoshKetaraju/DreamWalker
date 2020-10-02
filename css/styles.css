@@ -704,6 +704,7 @@ body {
 
 .email-btn.dark {
   border: 1px solid white;
+  color: #fff;
 }
 
 .email-btn span {
