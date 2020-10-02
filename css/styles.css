@@ -650,7 +650,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .social-col {
@@ -679,7 +679,7 @@ body {
 }
 
 .social-icon {
-  padding: 0 50px 0 0;
+  padding: 0 25px 0;
   color: #343a40;
   font-size: 2rem;
   transition: all 0.75s;
@@ -878,7 +878,9 @@ body {
   .social-email {
     text-align: center;
   }
-
+  .social-icon-container {
+  text-align: center;
+}
   .social-icons {
     width: 25%;
     text-align: center;
