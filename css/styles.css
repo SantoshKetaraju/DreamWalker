@@ -122,14 +122,16 @@ body {
     border-radius: 50%;
   }
 }
-.container-fluid{
+
+.container-fluid {
   overflow-x: hidden;
 }
 
 /*-----------------------------------------------------------------Top Section-----------------------------------------------------------------*/
-#title .container-fluid{
+#title .container-fluid {
   padding: 3% 15%;
 }
+
 .top-section {
   /* background-color: #00bcd4; */
   min-height: 100vh;
@@ -168,7 +170,6 @@ body {
     background-position: 0 50%;
   }
 }
-
 
 /*---------------------------------Navbar-------------------------------------*/
 .fas {
@@ -312,7 +313,6 @@ body {
 }
 
 /*-----------------------------------------------------------------Intro Section-----------------------------------------------------------------*/
-
 #about .container-fluid {
   background: #fdfdfd;
   color: black;
@@ -322,6 +322,7 @@ body {
   background: #40514e;
   color: #fdfdfd;
 }
+
 .introduction {
   margin: auto;
   text-align: center;
@@ -352,9 +353,11 @@ body {
   background-color: #323232;
   color: #fdfdfd;
 }
-.services-section{
+
+.services-section {
   padding: 12%;
 }
+
 .skill-about {
   line-height: 2;
   font-weight: 600;
@@ -494,9 +497,10 @@ body {
   overflow-x: hidden;
 }
 
-.reviews{
+.reviews {
   min-height: 1072px;
 }
+
 .review-intro {
   line-height: 2;
   font-weight: bolder;
@@ -530,8 +534,9 @@ body {
 
 .carousel {
   padding: 6% 0 12%;
-  min-height:999px;
+  min-height: 999px;
 }
+
 .carousel-indicators {
   align-items: flex-end;
   /* padding: 30px 0; */
@@ -587,8 +592,6 @@ body {
 .testimonial-section a:hover {
   text-decoration: none;
 }
-
-.carousel-indicators .li {}
 
 /*-----------------------------------------------------------------Footer Section-----------------------------------------------------------------*/
 /* Footer */
@@ -723,13 +726,16 @@ body {
 
 /*-----------------------------------------------------------------Media Query Break-Points-----------------------------------------------------------------*/
 @media (max-width: 1440px) {
+
   /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
-  .reviews{
+  .reviews {
     min-height: 1008px;
   }
-.carousel{
-  min-height:1008px;
-}
+
+  .carousel {
+    min-height: 1008px;
+  }
+
   .review-intro {
     line-height: 1.5;
     width: 90%;
@@ -744,24 +750,28 @@ body {
     width: 15px;
     height: 15px;
   }
+}
 
-}
-@media (max-width: 1366px){
+@media (max-width: 1366px) {
+
   /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
-  .reviews{
+  .reviews {
     min-height: 982px;
   }
-  .carousel{
+
+  .carousel {
     min-height: 982px;
   }
 }
+
 @media (max-width: 1279px) {
 
   /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
-  .reviews{
+  .reviews {
     min-height: 758px;
   }
-  .carousel{
+
+  .carousel {
     min-height: 758px;
   }
 
@@ -814,7 +824,7 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
   /**********************************************************************************Top section-media-query-rules/**********************************************************************************/
   /*----------------------------------------------------------Navbar----------------------------------------------------------*/
@@ -847,21 +857,23 @@ body {
   #about .container-fluid {
     min-height: 100vh;
   }
-.introduction{
-  padding: 15%;
-}
+
+  .introduction {
+    padding: 15%;
+  }
+
   .introduction h1 {
     padding-bottom: 5%;
   }
 
   .intro-img-container {
-    width: 80%;
+    width: 100%;
     margin: 15% auto;
     padding: 0;
   }
 
   .intro-img-container img {
-    width: 75%;
+    width: 50%;
   }
 
   .introduction h5 {
@@ -870,12 +882,14 @@ body {
   }
 
   /*----------------------------------------------------------Skills----------------------------------------------------------*/
-  .services-section{
+  .services-section {
     padding: 15%;
   }
-  .skill-about{
+
+  .skill-about {
     font-size: 2.5rem;
   }
+
   .skills-row {
     line-height: 2;
     margin: 12% auto 0 auto;
@@ -887,25 +901,26 @@ body {
     font-size: 2rem;
     margin: 7% auto;
   }
+
   .skill-description p {
     line-height: 2.5;
   }
 
   .webdev-img {
     float: none;
-    width: 60%;
+    width: 35%;
     margin: 0 auto 3% auto;
   }
 
   .gamedev-img {
     float: none;
-    width: 80%;
+    width: 55%;
     margin: 0 auto 3% auto;
   }
 
   .graphicdesign-img {
     float: none;
-    width: 70%;
+    width: 45%;
     border-radius: 100%;
     margin: 0 auto 3% auto;
   }
@@ -940,14 +955,70 @@ body {
     width: 12px;
     height: 12px;
   }
+
   /*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+  .contact-section {
+    padding: 10% 10% 5%;
+  }
+
   .contact-tagline {
     line-height: 1.5;
     font-weight: 900;
     font-size: 2rem;
     width: 85%;
   }
-  .social-row{
+
+  .social-row {
     margin-bottom: 100px;
+  }
+
+  @media (max-width: 400px) {
+
+    /*----------------------------------------------------------Introduction----------------------------------------------------------*/
+    .introduction h5 {
+      line-height: 2;
+    }
+
+    /*----------------------------------------------------------Skills----------------------------------------------------------*/
+    .skills-row {
+      line-height: 2;
+      margin: 12% auto 0 auto;
+      text-align: center;
+      width: 100%;
+    }
+
+    .skill-description p {
+      line-height: 2;
+    }
+
+    /*----------------------------------------------------------Reviews----------------------------------------------------------*/
+    .carousel {
+      min-height: 700px;
+    }
+
+    .review-intro {
+      font-size: 1.8rem;
+      margin: 7% auto 5% auto;
+    }
+
+    #testimonials h2 {
+      width: 80%;
+      font-size: 1rem;
+      line-height: 2;
+    }
+
+    .carousel-item {
+      margin-bottom: 8%;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      width: 12px;
+      height: 12px;
+    }
+
+    /*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+    .social-col {
+      padding: 25px;
+    }
   }
 }
