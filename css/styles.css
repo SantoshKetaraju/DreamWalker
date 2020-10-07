@@ -124,6 +124,9 @@ body {
 }
 
 /*-----------------------------------------------------------------Top Section-----------------------------------------------------------------*/
+#title .container-fluid{
+  padding: 3% 15%;
+}
 .top-section {
   /* background-color: #00bcd4; */
   height: 100vh;
@@ -163,9 +166,6 @@ body {
   }
 }
 
-.container-fluid {
-  padding: 3% 15%;
-}
 
 /*---------------------------------Navbar-------------------------------------*/
 .fas {
@@ -290,12 +290,6 @@ body {
 
 .intro {
   padding: 15% 0 15%;
-  border: solid 2px #252a34;
-}
-
-.intro.dark {
-  padding: 15% 0 15%;
-  border: solid 2px #fff;
 }
 
 .desc {
@@ -315,14 +309,9 @@ body {
 }
 
 /*-----------------------------------------------------------------Intro Section-----------------------------------------------------------------*/
-.introduction {
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
-  padding: 5% 0 10%;
-}
-#about .container-fluid{
-  background:#fdfdfd;
+
+#about .container-fluid {
+  background: #fdfdfd;
   color: black;
 }
 
@@ -330,23 +319,29 @@ body {
   background: #40514e;
   color: #fdfdfd;
 }
+.introduction {
+  margin: auto;
+  text-align: center;
+  padding: 12%;
+}
 
 .intro-img-container {
-  padding: 5%;
+  padding-bottom: 2%;
 }
 
 .introduction h1 {
-  padding: 5%;
+  padding-bottom: 2%;
   font-weight: 900;
 }
 
 .introduction h5 {
   line-height: 2;
+  width: 50%;
+  margin: auto;
 }
 
 /*-----------------------------------------------------------------services Section-----------------------------------------------------------------*/
 #services .container-fluid {
-  padding: 0 0 5% 0;
   background-color: #e4fffe;
 }
 
@@ -354,8 +349,9 @@ body {
   background-color: #323232;
   color: #fdfdfd;
 }
-
-
+.services-section{
+  padding: 12%;
+}
 .skill-about {
   line-height: 2;
   font-weight: 600;
@@ -364,7 +360,7 @@ body {
 
 .skills-row {
   line-height: 2;
-  margin: 100px auto 150px;
+  margin: 10% auto 0 auto;
   text-align: left;
   width: 75%;
 }
@@ -488,37 +484,6 @@ body {
   transform: translate3d(0px, 0px, 0px);
 }
 
-/*-----------------------------------------------------------------Services Section-----------------------------------------------------------------*/
-/* #services {
-  background-color: #0D1526
-}
-
-#services .container-fluid {
-  padding: 3%;
-}
-
-.services-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #FEFCFF;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2rem;
-  transform: translate(-50%, -50%);
-}
-
-.services-section {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  color: #FEFCFF;
-}
-
-.service-img {
-  width: 100%;
-  height: 500px;
-} */
 /*-----------------------------------------------------------------Testimonial Section-----------------------------------------------------------------*/
 #testimonials .container-fluid {
   padding: 0;
@@ -526,16 +491,17 @@ body {
   overflow-x: hidden;
 }
 
-.reviews {
-  margin: auto;
+.reviews{
+  min-height: 1072px;
 }
-
 .review-intro {
   line-height: 2;
   font-weight: bolder;
   font-size: 3rem;
-  padding-top: 5%;
+  padding: 6% 0 5%;
+  margin: auto;
 }
+
 .review-intro.dark {
   color: #FCFFEF;
 }
@@ -543,32 +509,29 @@ body {
 #testimonials h2 {
   margin: auto auto 0 auto;
   line-height: 2;
-  letter-spacing: 1px;
   width: 75%;
   background-color: rgba(255, 255, 255, .5);
   border-radius: .25em;
   box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+.apostrophe {
+  padding: 0 3px;
+  margin: 0 3px;
 }
 
 .carousel {
-  padding: 5% 0 5% 0;
-  margin: auto;
-  /* background-color: #2ec1ac; */
+  padding: 6% 0 12%;
+  min-height:999px;
 }
-
-.carousel-inner {
-  margin: auto;
-}
-
-.carousel-item {
-  ;
-}
-
 .carousel-indicators {
   align-items: flex-end;
-  padding: 30px 0;
+  /* padding: 30px 0; */
 }
 
 .bg {
@@ -586,9 +549,11 @@ body {
   left: -50%;
   bottom: 0;
 }
+
 .bg.bright {
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
 }
+
 .bg.dark {
   background-image: linear-gradient(-60deg, #013220 50%, #0e3150 50%);
 }
@@ -650,12 +615,13 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 
 .social-col {
   padding: 50px;
   flex-wrap: nowrap;
+  min-width: 50%;
 }
 
 .social-col p {
@@ -672,10 +638,16 @@ body {
   color: #8f8f8f;
   font-weight: 500;
   font-size: 0.75rem;
+  text-align: left;
 }
 
 .p-footer.dark {
   color: #FEFCFF;
+}
+
+.social-icons {
+  width: 25%;
+  text-align: left;
 }
 
 .social-icon {
@@ -687,6 +659,10 @@ body {
 
 .social-icon.dark {
   color: #FEFCFF;
+}
+
+.social-email {
+  text-align: left;
 }
 
 .email-btn {
@@ -743,116 +719,57 @@ body {
 }
 
 /*-----------------------------------------------------------------Media Query Break-Points-----------------------------------------------------------------*/
-@media(hover: hover) and (pointer: fine) and (min-width: 1280px) {
-
-  /**********************************************************************************services-media-query-rules/**********************************************************************************/
-  .services-section {
-    flex-wrap: nowrap;
-  }
-
-  .services-col {
-    flex: 1 1 auto;
-    max-width: 33.33%;
-    position: relative;
-    transition: all 0.5s;
-  }
-
-  .overlay-image {
-    width: 100%;
-    height: 500px;
-    opacity: 0.9;
-    background-color: black;
-    text-align: center;
-    z-index: 10;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .overlay-text {
-    top: 50%;
-    left: 0;
-    right: 0;
-    font-weight: 900;
-    font-size: 3rem;
-    color: white;
-    position: absolute;
-  }
-
-  .services-section:hover .services-col {
-    flex: 1 2 auto;
-  }
-
-  .services-section:hover .services-col:hover {
-    flex: 2 1 auto;
-    max-width: 66.66%;
-  }
-
-  .services-section:hover .services-col:hover .overlay-image:hover {
-    opacity: 0;
-  }
-
+@media (max-width: 1440px) {
   /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
-  #testimonials .container-fluid {
-    min-height: 450px;
+  .reviews{
+    min-height: 1008px;
+  }
+.carousel{
+  min-height:1008px;
+}
+  .review-intro {
+    line-height: 1.5;
+    width: 90%;
   }
 
-  /**********************************************************************************footer-media-query-rules/**********************************************************************************/
-  .tagline {
-    text-align: left;
+  #testimonials h2 {
+    width: 80%;
+    font-size: 1.8rem;
   }
 
-  .contact-tagline {
-    text-align: left;
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 15px;
+    height: 15px;
   }
 
-  .social-row {
-    align-items: flex-end;
-    justify-content: flex-start;
+}
+@media (max-width: 1366px){
+  /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
+  .reviews{
+    min-height: 982px;
   }
-
-  .social-col {
-    flex-wrap: nowrap;
-    min-width: 50%;
-  }
-
-  .social-email {
-    text-align: left;
-  }
-
-  .social-icons {
-    width: 25%;
-    text-align: left;
-  }
-
-  .p-footer {
-    text-align: left;
+  .carousel{
+    min-height: 982px;
   }
 }
-
 @media (max-width: 1279px) {
 
-  /**********************************************************************************services-media-query-rules/**********************************************************************************/
-  .services-section {
-    flex-wrap: wrap;
-  }
-
-  .services-col {
-    flex: 1 1 auto;
-    width: 100%;
-  }
-
-  .overlay-img {
-    display: none;
-  }
-
-  .overlay-text {
-    display: none;
-  }
-
   /**********************************************************************************testimonials-media-query-rules/**********************************************************************************/
-  #testimonials .container-fluid {
-    min-height: 700px;
+  .reviews{
+    min-height: 758px;
+  }
+  .carousel{
+    min-height: 758px;
+  }
+
+  .review-intro {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+
+  #testimonials h2 {
+    font-size: 1.5rem;
+    line-height: 2;
   }
 
   /**********************************************************************************footer-media-query-rules/**********************************************************************************/
@@ -879,9 +796,11 @@ body {
   .social-email {
     text-align: center;
   }
+
   .social-icon-container {
-  text-align: center;
-}
+    text-align: center;
+  }
+
   .social-icons {
     width: 25%;
     text-align: center;
@@ -889,5 +808,140 @@ body {
 
   .p-footer {
     text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+
+  /**********************************************************************************Top section-media-query-rules/**********************************************************************************/
+  /*----------------------------------------------------------Navbar----------------------------------------------------------*/
+  .fas, .far {
+    font-size: 1.5rem;
+  }
+
+  .line-1, .line-2 {
+    width: 30px;
+    height: 3px;
+  }
+
+  /*----------------------------------------------------------Greeting----------------------------------------------------------*/
+  .desc {
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+
+  .desc span {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .desc-game-dev, .desc-web-dev {
+    font-size: 0.75rem;
+    margin-bottom: 1%;
+  }
+
+  /*----------------------------------------------------------Introduction----------------------------------------------------------*/
+  #about .container-fluid {
+    min-height: 100vh;
+  }
+.introduction{
+  padding: 15%;
+}
+  .introduction h1 {
+    padding-bottom: 5%;
+  }
+
+  .intro-img-container {
+    width: 80%;
+    margin: 15% auto;
+    padding: 0;
+  }
+
+  .intro-img-container img {
+    width: 75%;
+  }
+
+  .introduction h5 {
+    line-height: 2.5;
+    width: 100%;
+  }
+
+  /*----------------------------------------------------------Skills----------------------------------------------------------*/
+  .services-section{
+    padding: 15%;
+  }
+  .skill-about{
+    font-size: 2.5rem;
+  }
+  .skills-row {
+    line-height: 2;
+    margin: 12% auto 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .skill-description h1 {
+    font-size: 2rem;
+    margin: 7% auto;
+  }
+  .skill-description p {
+    line-height: 2.5;
+  }
+
+  .webdev-img {
+    float: none;
+    width: 60%;
+    margin: 0 auto 3% auto;
+  }
+
+  .gamedev-img {
+    float: none;
+    width: 80%;
+    margin: 0 auto 3% auto;
+  }
+
+  .graphicdesign-img {
+    float: none;
+    width: 70%;
+    border-radius: 100%;
+    margin: 0 auto 3% auto;
+  }
+
+  /*----------------------------------------------------------Reviews----------------------------------------------------------*/
+  .carousel {
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .review-intro {
+    font-size: 2rem;
+    width: 100%;
+    margin: 7% auto;
+  }
+
+  #testimonials h2 {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 2.5;
+  }
+
+  .carousel-item {
+    margin-bottom: 5%;
+  }
+
+  .carousel-indicators {
+    padding: 0;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 12px;
+    height: 12px;
+  }
+  /*----------------------------------------------------------FOOTER----------------------------------------------------------*/
+  .contact-tagline {
+    line-height: 1.5;
+    font-weight: 900;
+    font-size: 2rem;
+    width: 85%;
   }
 }
