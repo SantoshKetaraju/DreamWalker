@@ -944,4 +944,7 @@ body {
     font-size: 2rem;
     width: 85%;
   }
+  .social-row{
+    margin-bottom: 100px;
+  }
 }
