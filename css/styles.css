@@ -132,7 +132,7 @@ body {
 }
 .top-section {
   /* background-color: #00bcd4; */
-  height: 100vh;
+  min-height: 100vh;
   color: #fdfdfd;
 }
 
