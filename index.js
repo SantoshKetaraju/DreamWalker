@@ -1,5 +1,6 @@
 $(".p-footer").text("© " + new Date().getFullYear() + " DreamWalker");
-;
+
+var viewportWidth = $(window).width();
 var line1 = $(".line-1");
 var line2 = $(".line-2");
 var coloredDivs = $(".color-change");
@@ -111,7 +112,7 @@ var $servicesColumns = $(".services-col");
 
 var $animatedElements = $(".animated-elements");
 var $window = $(window);
-$window.on('scroll resize', check_if_in_view);
+$window.on("scroll resize", check_if_in_view);
 
 $window.trigger("scroll");
 
@@ -133,16 +134,23 @@ function check_if_in_view() {
     //The .offset() method allows us to retrieve the current position of an element (specifically its border box, which excludes margins) relative to the document
     var elementTopPosition = $element.offset().top;
 
-    var offsetPixels = 75;
-
     var elementBottomPosition = elementHeight + elementTopPosition;
 
     //check to see if this current container is within viewport
-    if ((elementBottomPosition >= $windowTopPosition) && ($windowBottomPosition >= elementBottomPosition)) {
-      $element.addClass("in-view");
-    } else if (($windowBottomPosition < elementTopPosition) || ($windowTopPosition > elementBottomPosition)) {
-      $element.removeClass("in-view");
+    if(viewportWidth <= 850){
+      if ((elementBottomPosition >= $windowTopPosition) && ($windowBottomPosition >= elementBottomPosition - (elementHeight/2))) {
+        $element.addClass("in-view");
+      } else if (($windowBottomPosition < elementTopPosition) || ($windowTopPosition > elementBottomPosition)) {
+        $element.removeClass("in-view");
+      }
+    }else{
+      if ((elementBottomPosition >= $windowTopPosition) && ($windowBottomPosition >= elementBottomPosition)) {
+        $element.addClass("in-view");
+      } else if (($windowBottomPosition < elementTopPosition) || ($windowTopPosition > elementBottomPosition)) {
+        $element.removeClass("in-view");
+      }
     }
+
 
   });
 }
