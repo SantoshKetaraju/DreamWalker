@@ -67,47 +67,21 @@ $(".night-mode").click(function(){
 
   }
 });
-var colIndex = [];
-var $servicesColumns = $(".services-col");
-// $(".services-section").mouseenter(function() {
-//
-//   $.each($servicesColumns, function() {
-//
-//     $(this).hover(function() {
-//
-//       var colIndex = $(this).index();
-//
-//       $.each($servicesColumns, function() {
-//         var serviceColumn = $(this);
-//         if (serviceColumn.index() === colIndex) {
-//           serviceColumn.css({
-//             "flex": "2 1 auto",
-//             "max-width": "66.66%"
-//           });
-//         } else {
-//
-//           serviceColumn.css({
-//             "flex": "1 1 auto",
-//             "max-width": "16.66665%"
-//           });
-//
-//         }
-//
-//       });
-//
-//     });
-//
-//   });
-//
-// }).mouseleave(function() {
-//
-//   $(".services-col").css({
-//     "flex": "1 1 auto",
-//     "max-width": "33.3333%"
-//   });
-//
-// });
-
+$(".carousel").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function(event){
+        var xMove = event.originalEvent.touches[0].pageX;
+        if( Math.floor(xClick - xMove) > 5 ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -5 ){
+            $(this).carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+    });
+});
 
 
 var $animatedElements = $(".animated-elements");
