@@ -592,7 +592,61 @@ body {
 .testimonial-section a:hover {
   text-decoration: none;
 }
-
+/*-----------------------------------------------------------------FAQ Section-----------------------------------------------------------------*/
+.faq-section{
+  padding: 8%;
+  background-color: #FCB949;
+}
+.faq-heading{
+  line-height: 2;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 3%;
+}
+.card{
+  background-color: #ffefa0;
+}
+.card-header{
+background-color: #ffd57e;
+}
+.card-body{
+background-color: #ffefa0;
+}
+.faq-section.dark{
+background-color: #323232;
+}
+.faq-section.dark .faq-heading{
+  color: #fdfdfd;
+}
+.faq-section.dark .card{
+  background-color: #40514e;
+}
+.faq-section.dark .card-header{
+background-color: #41444b;
+}
+.faq-section.dark .card-body{
+background-color: #52575d;
+}
+.btn.focus, .btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+.question{
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.answer{
+  line-height: 2;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.faq-section.dark .question{
+color: #fdfdfd;
+}
+.faq-section.dark .answer{
+  color: #fdfdfd;
+}
 /*-----------------------------------------------------------------Footer Section-----------------------------------------------------------------*/
 /* Footer */
 #footer .container-fluid {
@@ -784,7 +838,18 @@ body {
     font-size: 1.5rem;
     line-height: 2;
   }
+  /**********************************************************************************FAQ-media-query-rules/**********************************************************************************/
 
+  .faq-heading{
+    font-size: 2.5rem;
+  }
+  .question{
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .answer{
+    line-height: 2.5;
+  }
   /**********************************************************************************footer-media-query-rules/**********************************************************************************/
   .tagline {
     text-align: center;
@@ -988,6 +1053,21 @@ body {
     }
 
     .skill-description p {
+      line-height: 2;
+    }
+    /**********************************************************************************FAQ-media-query-rules/**********************************************************************************/
+
+    .faq-heading{
+      font-size: 2.2rem;
+      line-height: 1.5;
+      margin-bottom: 6%
+    }
+    .question{
+      font-size: 1rem;
+      line-height: 2;
+    }
+    .answer{
+      font-size: 1rem;
       line-height: 2;
     }
 
