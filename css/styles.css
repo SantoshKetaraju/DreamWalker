@@ -179,7 +179,10 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
 }
-
+.fa-lightbulb{
+  padding-left: 6px;
+  padding-right: 20px;
+}
 .fas.bright {
   border: none;
   background: rgba(255, 255, 255, 0.75);
