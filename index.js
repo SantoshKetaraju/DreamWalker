@@ -1,4 +1,4 @@
-$(".p-footer").text("© " + new Date().getFullYear() + " DreamWalker");
+$(".p-footer").text("© " + new Date().getFullYear() + " DreamEscence");
 
 var viewportWidth = $(window).width();
 var line1 = $(".line-1");
