@@ -868,7 +868,10 @@ color: #fdfdfd;
   color: #00acee;
   text-decoration: none;
 }
-
+.linkedin-icon:hover{
+  color: #0a66c2;
+  text-decoration: none;
+}
 /*-----------------------------------------------------------------Media Query Break-Points-----------------------------------------------------------------*/
 @media (max-width: 1440px) {
 
