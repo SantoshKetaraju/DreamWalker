@@ -1146,6 +1146,35 @@ color: #fdfdfd;
     .skill-description p {
       line-height: 2;
     }
+     /*-----------------------------------------------------------------portfolio Section-----------------------------------------------------------------*/
+    .portfolio-section {
+      padding: 8%;
+    }
+
+    .games-heading {
+      font-size: 3.4rem;
+    }
+
+    .game-title {
+      font-size: 1.8rem;
+    }
+
+    .game-img {
+      border-radius: 45px;
+      max-width: 125px;
+      margin: auto;
+    }
+
+    .game-desc {
+      font-size: 1rem;
+      padding: 3%;
+    }
+
+    .playstore-btn {
+      max-width: 150px;
+    }
+
+    /*-----------------------------------------------------------------portfolio Section-----------------------------------------------------------------*/
     /**********************************************************************************FAQ-media-query-rules/**********************************************************************************/
 
     .faq-heading{
