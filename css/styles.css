@@ -14,6 +14,13 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+.align-self-center{
+  align-self: center;
+}
 .circles {
   position: absolute;
   top: 0;
@@ -336,6 +343,10 @@ body {
   padding-bottom: 2%;
 }
 
+.intro-avatar {
+  max-width: 192px;
+}
+
 .introduction h1 {
   padding-bottom: 2%;
   font-weight: 900;
@@ -492,7 +503,81 @@ body {
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
+/*-----------------------------------------------------------------portfolio Section-----------------------------------------------------------------*/
 
+
+.portfolio-section {
+  padding: 12%;
+  background-color: #FD3A69;
+  color: white;;
+}
+
+.portfolio-section.bright{
+  background-color: #F38BA0;
+  color: black
+}
+
+.portfolio-section.dark{
+  background-color: #171010;
+  color: white;
+}
+
+.games-heading{
+  font-size: 4.4rem;
+  font-weight: bolder;
+}
+.game-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-img{
+  border-radius: 75px;
+}
+
+.game-title {
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
+
+
+.game-row {
+  background-color: #FF577F;
+  color: white;;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  margin: 12% 0;
+  border-radius: 50px;
+}
+
+.game-row.bright{
+  background-color: #FFBCBC;
+  color: black
+}
+
+.game-row.dark{
+  background-color: #362222;
+  color: white;
+}
+
+
+.game-desc {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.playstore-btn {
+  max-width: 300px;
+  padding: 3% 0;
+}
+
+/*-----------------------------------------------------------------portfolio Section-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------Testimonial Section-----------------------------------------------------------------*/
 #testimonials .container-fluid {
   padding: 0;
