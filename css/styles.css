@@ -511,13 +511,13 @@ img {
 
 .portfolio-section {
   padding: 12%;
-  background-color: #FD3A69;
-  color: white;;
+  background-color: #F38BA0;
+  color: black;
 }
 
 .portfolio-section.bright{
-  background-color: #F38BA0;
-  color: black
+    background-color: #FD3A69;
+  color: white;
 }
 
 .portfolio-section.dark{
@@ -548,8 +548,8 @@ img {
 
 
 .game-row {
-  background-color: #FF577F;
-  color: white;;
+  background-color: #FFBCBC;
+  color: black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -560,8 +560,8 @@ img {
 }
 
 .game-row.bright{
-  background-color: #FFBCBC;
-  color: black
+  background-color: #FF577F;
+  color: white;
 }
 
 .game-row.dark{
