@@ -515,20 +515,21 @@ img {
   color: black;
 }
 
-.portfolio-section.bright{
-    background-color: #FD3A69;
+.portfolio-section.bright {
+  background-color: #FD3A69;
   color: white;
 }
 
-.portfolio-section.dark{
+.portfolio-section.dark {
   background-color: #171010;
   color: white;
 }
 
-.games-heading{
+.games-heading {
   font-size: 4.4rem;
   font-weight: bolder;
 }
+
 .game-details {
   display: flex;
   flex-wrap: wrap;
@@ -537,7 +538,7 @@ img {
   justify-content: center;
 }
 
-.game-img{
+.game-img {
   border-radius: 75px;
 }
 
@@ -545,7 +546,6 @@ img {
   font-size: 3.2rem;
   font-weight: bolder;
 }
-
 
 .game-row {
   background-color: #FFBCBC;
@@ -559,16 +559,16 @@ img {
   border-radius: 50px;
 }
 
-.game-row.bright{
+.game-row.bright {
   background-color: #FF577F;
   color: white;
+
 }
 
-.game-row.dark{
+.game-row.dark {
   background-color: #362222;
   color: white;
 }
-
 
 .game-desc {
   text-align: justify;
