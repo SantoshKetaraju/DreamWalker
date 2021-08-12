@@ -27,6 +27,7 @@ if(line1.hasClass("positive-45")){
 })
 $(".brightness").click(function(){
 
+ if(!$(this).hasClass("disabled")){
   if($(this).hasClass("bright")){
     $(this).removeClass("bright");
 $(this).attr('title', 'Brighten the color');
@@ -46,6 +47,7 @@ $(this).attr('title', 'Brighten the color');
     });
 
   }
+}
 });
 $(".night-mode").click(function(){
   if($(this).hasClass("far")){
