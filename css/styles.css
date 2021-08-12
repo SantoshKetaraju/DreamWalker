@@ -341,6 +341,9 @@ img {
 
 .intro-img-container {
   padding-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-avatar {
