@@ -770,7 +770,7 @@ color: #fdfdfd;
 }
 
 .social-col {
-  padding: 50px;
+  padding: 50px 0;
   flex-wrap: nowrap;
   min-width: 50%;
 }
