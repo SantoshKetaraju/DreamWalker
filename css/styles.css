@@ -808,6 +808,14 @@ color: #fdfdfd;
   transition: all 0.75s;
 }
 
+.social-icon-container a:first-child{
+  padding-left: 0;
+}
+
+.social-icon-container a:last-child{
+  padding-right: 0;
+}
+
 .social-icon.dark {
   color: #FEFCFF;
 }
