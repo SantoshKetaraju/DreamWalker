@@ -4,13 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Development | Web Development | Graphic Design</title>
+  <title>dreamWalker</title>
   <link rel="icon" href="Favicon/favicon_1.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@100;400;900&family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/56e5ae6f10.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
-
+  <!-- UIkit CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -137,7 +142,7 @@
           <div class="skill-description">
             <img class="graphicdesign-img" src="Images/girl.jpg" alt="GraphicDesign-img">
             <h1>Graphic Design</h1>
-            <p>sketching and drawing are my other passions, and I believe you will like what I design and draw, may it be an illustration for your book cover or your logo. I assure you my highest quality of work.</p>
+            <p>sketching and drawing are my other passions, and I believe you will like what I design and draw may it be an illustration for your book, cover or your logo. I assure you my highest quality of work.</p>
           </div>
 
         </div>
@@ -146,7 +151,8 @@
     </div>
 
   </section>
-<section class="portfolio-section color-change bright" id="portfolio">
+
+  <!--<section class="portfolio-section color-change bright" id="portfolio">
     <div class="games-heading">
       Games
     </div>
@@ -181,8 +187,8 @@
         </div>
 
         <div class="playstore-btn">
-          <a target="_blank" href='https://play.google.com/store/apps/details?id=com.Dreamwalker.FlappyBirbs&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
+          <a href='https://play.google.com/store/apps/details?id=com.Dreamwalker.FlappyBirbs&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
           </a>
         </div>
 
@@ -226,6 +232,358 @@
     </div>
     </div>
   </section>
+-->
+  <section id="games">
+    <div class="container-fluid bright color-change">
+      <div class="games-heading">
+        My Games and Projects
+      </div>
+      <p class="games-sub-heading">These are just some of my games and projects; I worked on several other client's projects which you can <a class="freelancer-link" target="_blank" href="https://www.freelancer.com/u/DreamWalker7">check here</a>.</p>
+      <div class="games-row">
+        <div class="game">
+          <p class="game-name">Flappy Birbs</p>
+          <div uk-slideshow="animation: slide; ratio: 1920:1080">
+            <div class="uk-position-relative uk-dark" tabindex="-1">
+
+              <ul class="uk-slideshow-items">
+                <li>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L9lO4u3lYCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </li>
+                <li>
+                  <img src="Images/FlappyFeatured Art.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Hi Res Logo.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy1.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy2.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy3.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy4.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy5.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy6.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy7.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/flappy8.jpg" alt="" uk-cover>
+                </li>
+              </ul>
+
+              <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-dark" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-slidenav-large  uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+            <ul class="uk-dotnav uk-flex-center uk-margin">
+              <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+              <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              <li uk-slideshow-item="4"><a href="#">Item 5</a></li>
+              <li uk-slideshow-item="5"><a href="#">Item 6</a></li>
+              <li uk-slideshow-item="6"><a href="#">Item 7</a></li>
+              <li uk-slideshow-item="7"><a href="#">Item 8</a></li>
+              <li uk-slideshow-item="8"><a href="#">Item 9</a></li>
+              <li uk-slideshow-item="9"><a href="#">Item 10</a></li>
+              <li uk-slideshow-item="10"><a href="#">Item 11</a></li>
+            </ul>
+          </div>
+
+
+
+          <p class="game-type"><b>Type: </b>Hyper Casual / Infinite Side-scroller</p>
+
+          <p class="game-platform"><b>Platform: </b>Android</p>
+          <p class="game-platform"><b>Technologies used: </b>Unity 3D, C#, Photoshop</p>
+          <details>
+            <summary class="game-summary summ-ht"><b>Summary: </b>Simple.Fun.
+              ✦Flap your Wings!✦
+              ✦Dodge Pipes.✦
+              ✦Score as High as you can!✦</summary>
+            <p class="summary-desc">
+              This is an infinite side scroller game inspired by the hit game Flappy Birds, it is built for Android.
+              You control a bird by tapping on the screen and dodging the pipes — if you hit the pipe game I over.
+              You collect coins that can be used in the shop to unlock different kinds of birds and/or vehicles.
+              Once you unlock all the birds/vehicles — A special mode called "Glow in the Dark" is unlocked, in This
+              special mode, the birds and pipe glow beautifully and the background turns to the night sky!
+            </p>
+          </details>
+          <details>
+            <summary class="game-summary"><b>What I did in this project </b></summary>
+            <p class="what-do-desc">
+              This game is similar to Flappy birds, the input is a simple tap/click mechanism. The goal is to avoid colliding with the pipes, pipes are spawned using an object pool.
+              You need to collect coins to unlock all the birds in the shop.
+              PlayerPrefs and data serialization is used for storing the data regarding the coins collected and to track all the birds unlocked in the game.
+              I used Unity IAP(In-App-Purchases) for implementing shop in the game, players can buy bundles of coins which they can later use to unlock or buy new birds and vehicles. Google's Admob was used to integrate interstitial and rewarded ads.
+              There is a popup that is shown after every high score and/or game over which alerts the player to share their high score which is a good social feature!
+
+            </p>
+          </details>
+          <div class="playstore-btn">
+            <a target="_blank" href='https://play.google.com/store/apps/details?id=com.Dreamwalker.FlappyBirbs&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+            </a>
+          </div>
+        </div>
+        <div class="game">
+          <p class="game-name">Box Tap</p>
+          <div uk-slideshow="animation: slide; ratio: 1920:1080">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+              <ul class="uk-slideshow-items">
+                <li>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L7tBjOdu7IE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </li>
+                <li>
+                  <img src="Images/Boxtap feature.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Box tap.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/boxtap 1.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/boxtap2.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/boxtap3.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/boxtap4.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/boxtap5.png" alt="" uk-cover>
+                </li>
+              </ul>
+
+              <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-dark" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-slidenav-large  uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+            <ul class="uk-dotnav uk-flex-center uk-margin">
+              <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+              <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              <li uk-slideshow-item="4"><a href="#">Item 5</a></li>
+              <li uk-slideshow-item="5"><a href="#">Item 6</a></li>
+              <li uk-slideshow-item="6"><a href="#">Item 6</a></li>
+              <li uk-slideshow-item="7"><a href="#">Item 7</a></li>
+            </ul>
+          </div>
+
+
+
+          <p class="game-type"><b>Type: </b>Hyper Casual</p>
+
+          <p class="game-platform"><b>Platform: </b>Android</p>
+
+          <p class="game-platform"><b>Technologies used: </b>Unity 3D, C#, Photoshop</p>
+          <details>
+            <summary class="game-summary summ-ht"><b>Summary: </b>
+              Tap to avoid myriad obstacles and collect the colorful glowing orbs to increase your score.
+            </summary>
+            <p class="summary-desc">
+              This is an infinite scroller game in which the user has to guide the ball through various obstacles and try to collect glowing orbs(balls) that are scattered on the screen, score as high as possible by breaking the glowing orb(ball).
+              The obstacles vary in shape, size and pattern, as the user progresses the level gets harder.
+            </p>
+          </details>
+          <details>
+            <summary class="game-summary"><b>What I did in this project </b></summary>
+            <p class="what-do-desc">
+              It is a hyper-casual game where the player, in this case, the ball sways in to and fro motion on the screen, the movement of the ball is achieved using trigonometry, the user has to tap the screen to control the ball, the ball moves
+              upward when the screen is tapped. There are different sets of obstacles that are spawned into the scene using an object pool. The game consists of three difficulties vis Easy, Medium and Hard.
+              Various particle effects are implemented using the particle system.
+              Social features including google sign in, google leaderboard and google achievements have been implemented using google play features. The player can access google leaderboards and achievements after they sign in by their google
+              account.
+              Google Admob is used to show interstitial ads on the game over.
+
+            </p>
+          </details>
+          <div class="playstore-btn">
+            <a target="_blank" href='https://play.google.com/store/apps/details?id=com.DreamWalkerGame.BoxTapLite&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+              <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
+            </a>
+          </div>
+
+
+        </div>
+        <div class="game">
+          <p class="game-name">Tank Wars</p>
+          <div uk-slideshow="animation: slide; ratio: 1920:1080">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+              <ul class="uk-slideshow-items">
+                <li>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/v566_CZMEq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </li>
+                <li>
+                  <img src="Images/tank 3.jpeg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/tank 2.jpeg" alt="" uk-cover>
+                </li>
+
+                <li>
+                  <img src="Images/tank 4.jpeg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/tank 5.jpeg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/tank 6.jpeg" alt="" uk-cover>
+                </li>
+              </ul>
+
+              <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-dark" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-slidenav-large  uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+            <ul class="uk-dotnav uk-flex-center uk-margin">
+              <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+              <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              <li uk-slideshow-item="4"><a href="#">Item 5</a></li>
+              <li uk-slideshow-item="5"><a href="#">Item 6</a></li>
+            </ul>
+          </div>
+
+
+
+          <p class="game-type"><b>Type: </b>Multiplayer Shooter</p>
+
+          <p class="game-platform"><b>Platform: </b>PC</p>
+
+          <p class="game-platform"><b>Technologies used: </b>Unity 3D, C#, Photoshop, GameSparks API</p>
+          <details>
+            <summary class="game-summary summ-ht"><b>Summary: </b>
+              Each player spawns with a tank and tries to shoot each other, the last person to survive wins!
+            </summary>
+            <p class="summary-desc">
+              This is a real-time multiplayer third-person shooter game, in which each player spawns on a separate spawn point inside the map — each player has to shoot the other player and the last tank standing wins the game.
+            </p>
+          </details>
+          <details>
+            <summary class="game-summary"><b>What I did in this project </b></summary>
+            <p class="what-do-desc">
+              This was my final year project for a Bachelor's of Engineering (Information Technology). We received an Outstanding grade for the project. The project was a Realtime Multiplayer Third Person Shooter in which the player(tank) shoots
+              another player and the last one standing wins the level.
+              The project had several complexities as there was a need for real-time communication between players, such as movement data telling where each player(tank) is on the map, whether a tank shot a mortar, what is the health of each tank in
+              the match, so on and so forth.
+              We used GameSpark API for the backend, GameSparks API was used for providing necessary features such as servers, lobby, matchmaking and data exchange between players.
+              Tank's(player) movement in the x-z plane used a simple input system of acceleration and deceleration via w/s keys or up/down arrow keys and rotation(turning) was controlled by a/d keys or left/right arrow keys. The tank is able to shoot
+              mortar shells; other tanks on collision with these shells had their health decreased, shells are spawned into the scene using object pool and also implemented particle effect using Unity's particle system for collision effects.
+
+            </p>
+          </details>
+          <p class="game-platform"><b>Download: </b>NA</p>
+
+        </div>
+        <div class="game">
+          <p class="game-name">Asteroid Shower</p>
+          <div uk-slideshow="animation: slide; ratio: 1920:1080">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+              <ul class="uk-slideshow-items">
+                <li>
+                  <img src="Images/Rocket shower2.png" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower1.png" alt="" uk-cover>
+                </li>
+
+                <li>
+                  <img src="Images/Rocket shower3.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower4.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower5.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower6.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower7.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                  <img src="Images/Rocket shower8.jpg" alt="" uk-cover>
+                </li>
+              </ul>
+
+              <a class="uk-position-center-left uk-position-small uk-slidenav-large uk-dark" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+              <a class="uk-position-center-right uk-position-small uk-slidenav-large  uk-light" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+            <ul class="uk-dotnav uk-flex-center uk-margin">
+              <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+              <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+              <li uk-slideshow-item="4"><a href="#">Item 5</a></li>
+              <li uk-slideshow-item="5"><a href="#">Item 6</a></li>
+              <li uk-slideshow-item="6"><a href="#">Item 7</a></li>
+              <li uk-slideshow-item="7"><a href="#">Item 8</a></li>
+            </ul>
+          </div>
+
+
+
+          <p class="game-type"><b>Type: </b>Hyper Casual</p>
+
+          <p class="game-platform"><b>Platform: </b>Android</p>
+
+          <p class="game-platform"><b>Technologies used: </b>Unity 3D, C#, Photoshop</p>
+          <details>
+            <summary class="game-summary  summ-ht"><b>Summary: </b>
+              Tap to avoid falling asteroids and collect the coins to increase your score.
+            </summary>
+            <p class="summary-desc">
+              This is an infinite scroller game in which the user has to guide the rocket through asteroids and score as high as possible. The speed of falling asteroids keeps on increasing as the level progresses, the player has to dodge the
+              asteroids and collect coins which he can then spend in the shop to buy powerups. There are two powerups; one powerup slows time and the other gives invincibility from asteroids, so asteroid impact doesn't affect the rocket, the player
+              also needs to keep track of the fuel of the rocket, the fuel gradually decreases and when the fuel is over the rocket stops and it is game over, to replenish fuel player has to collect fuel cans which drop along with asteroids.
+
+            </p>
+          </details>
+          <details>
+            <summary class="game-summary"><b>What I did in this project </b></summary>
+            <p class="what-do-desc">
+              It is a hyper-casual game where the player, in this case, a rocket is controlled by tapping on the screen, the rocket moves in the direction of the position of the tap that occurred on the screen.
+              The fuel of the rocket depletes gradually and the only way to replenish fuel is by collecting fuel cans that fall along with asteroids, they spawn at random intervals.
+              Asteroids, fuel cans and powerups are spawned using object pools. The background has been programmed such that colorful planets pass by with a parallax effect, which gives more depth to the game and an overall aesthetic feel to the
+              game. Coroutines have been extensively used in the project for recurring events.
+
+            </p>
+          </details>
+          <p class="game-platform"><b>Download: </b>NA</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <section class="testimonial-section" id="testimonials">
     <div class="container-fluid">
       <div class="bg bright color-change">
@@ -264,13 +622,13 @@
 
               <h2><em class="apostrophe">"</em>Santosh is a true professional. He was continuously communicating on the progress of the project, and the project was delivered on time and on budget. I feel very happy to have found such a reliable
                 freelancer, and I have no doubt that we will work together on future projects.<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Kiers M, Spain</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Kiers M, Spain</em></a>
 
             </div>
             <div class="carousel-item container-fluid">
               <h2><em class="apostrophe">"</em>Santosh could not have been better! He's very professional. He knew exactly what to do. And he's a very nice guy. He debugged my iOS build despite not having an iPhone to test it on... He made all the
                 necessary changes and when I re-built it to the iPhone, it worked great. The guy's a legend. 100% coming back to him with any future Unity projects. Thanks Santosh!<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Dominic H, United Kingdom</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Dominic H, United Kingdom</em></a>
 
             </div>
             <div class="carousel-item container-fluid">
@@ -278,47 +636,47 @@
               <h2><em class="apostrophe">"</em>Really glad to of found Santosh. Came back to him after such a great experience on the last project and he has done it again. He has successfully implented Unity Ads into my game on both the Android and
                 the
                 iOS build. He goes the extra mile with his work and to make sure you're happy... I really appreciate all your help and patience Santosh. You're then man!<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Dominic H, United Kingdom</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Dominic H, United Kingdom</em></a>
 
 
             </div>
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>Absolutely brilliant work... very easy to understand and very helpful. Produced a perfect result!!!<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
 
             </div>
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>Delivered perfect work again... very happy and will keep using for future projects<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
 
 
             </div>
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>Santosh provides excellent service and great communications. Very happy with his work and service again.<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
 
 
             </div>
             <div class="carousel-item container-fluid">
               <h2><em class="apostrophe">"</em>Was a hard task but it was completed perfectly and on time<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
 
             </div>
 
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>Excellent work, excellent results. Very happy<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Diego S, Spain</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Diego S, Spain</em></a>
 
 
             </div>
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>Great job, again! Very happy with everything<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Andrew N, Australia</em></a>
 
 
 
@@ -326,7 +684,7 @@
             <div class="carousel-item container-fluid">
 
               <h2><em class="apostrophe">"</em>I gave Santosh a hard time, but he was patient and professional, and won't let you off until he makes sure you're really happy with results.<em class="apostrophe">"</em></h2>
-              <a href="https://www.freelancer.com/u/DreamWalker7"><em>Sparximer, Lebanon</em></a>
+              <a target="_blank" href="https://www.freelancer.com/u/DreamWalker7"><em>Sparximer, Lebanon</em></a>
 
 
 
@@ -448,7 +806,7 @@
             <div class="card-body answer">
               The payments are based on a milestone basis, Once I'm clear about your requirements, I break down the project in to small chunks of features,
               and I update you as I complete a section or a feature. Once we are half way in to the project I would require you to make a deposit of a 50% of the project's budget,
-              and you pay the remaining 50% after you have thoroughly verified the completion of the project. You can pay me via Paypal or Transferwise or if you have any other preffered way I'm open to discussion.
+              and you pay the remaining 50% after you have thoroughly verified the completeion of the project. You can pay me via Paypal or Transferwise or if you have any other preffered way I'm open to discussion.
             </div>
           </div>
         </div>
