@@ -28,9 +28,19 @@ a {
 a:hover {
   color: inherit;
 }
-em{
+
+em {
   color: inherit;
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .align-self-center {
   align-self: center;
 }
@@ -354,9 +364,11 @@ em{
   text-align: center;
   padding: 12%;
 }
+
 .introduction h5 {
   font-size: 1.2rem !important;
 }
+
 .intro-img-container {
   padding-bottom: 2%;
   display: flex;
@@ -380,8 +392,65 @@ em{
 }
 
 /*-----------------------------------------------------------------services Section-----------------------------------------------------------------*/
+#skills .container-fluid.bright{
+  background-color: #fffffc;
+  color: black;
+}
+#skills .container-fluid.dark{
+  background-color: #343a40;
+  color: white;
+}
+.skill-headline {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.skill-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill {
+  width: 46%;
+  margin: 2%;
+  padding: 2%;
+}
+
+.skill-img {
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.skill-text-box {
+  width: 100%;
+  padding: 1%;
+}
+
+.skill-text-box h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.skill summary{
+text-align: left;
+  font-size: 1.5rem;
+}
+.skill-text-box p {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
 #services .container-fluid {
-  background-color: #e4fffe;
+  background-color: #7400b8;
+  color: white;
 }
 
 #services .container-fluid.dark {
@@ -411,6 +480,15 @@ em{
   font-size: 1.2rem;
 }
 
+/*.unity-img{
+  float:left;
+}
+.lvl-img{
+  float: right;
+}
+.graphics-img{
+  float: left;
+}*/
 .webdev-img {
   float: right;
   margin-left: 30px;
@@ -779,7 +857,7 @@ em{
 
 #footer .container-fluid.dark {
   background: black;
-   color: #fdfdfd;
+  color: #fdfdfd;
 }
 
 .contact-tagline {
@@ -1034,9 +1112,11 @@ em{
   background-color: #43aa8b;
   color: white;
 }
-#games .container-fluid.dark{
+
+#games .container-fluid.dark {
   background-color: #000a04;
 }
+
 .colored-section {
   /* background-color: #00bcd4; */
   color: #fdfdfd;
@@ -1065,9 +1145,11 @@ em{
   font-size: 1.5rem;
   font-weight: 400;
 }
-#games .container-fluid.dark .games-row{
+
+#games .container-fluid.dark .games-row {
   color: white;
 }
+
 .games-row {
   display: flex;
   flex-wrap: wrap;
@@ -1076,9 +1158,11 @@ em{
   /* background-color: #ffefa0; */
   color: black;
 }
-#games .container-fluid.dark .game{
+
+#games .container-fluid.dark .game {
   background-color: #1f4b3b;
 }
+
 .game {
   width: 46%;
   margin: 2%;
@@ -1111,9 +1195,11 @@ em{
 .uk-slideshow-items li {
   background-color: #99d98c;
 }
+
 #games .container-fluid.dark .uk-slideshow-items li {
   background-color: #1f4b3b;
 }
+
 .uk-slideshow-items img {
   object-fit: scale-down;
   height: 100% !important;
@@ -1290,6 +1376,51 @@ em{
     width: 100%;
     margin: 3% 0;
   }
+  .skill-headline {
+    font-size: 2.5rem;
+  }
+
+  .skill-sub-heading {
+    font-size: 1.2rem;
+  }
+
+  .skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 2%;
+    padding: 5% 2%;
+  }
+
+  .skill-img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .skill-text-box {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .skill-text-box h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .skill summary{
+  text-align: center;
+    font-size: 1.2rem;
+  }
+  .skill-text-box p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 988px) {
@@ -1340,7 +1471,7 @@ em{
 
   /*----------------------------------------------------------Introduction----------------------------------------------------------*/
   #about .container-fluid {
-    min-height: 100vh;
+    /* min-height: 100vh; */
   }
 
   .introduction {
