@@ -252,13 +252,6 @@ em {
   padding: 0 0 4.5rem;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.85); /* semi-transparent background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* subtle shadow */
-}
 .navbar-dark {
   color: #FEFCFF;
 }
